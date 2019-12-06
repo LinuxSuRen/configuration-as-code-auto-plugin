@@ -29,7 +29,6 @@ public class InitPatch {
     final static String cascDirectory = "/WEB-INF/" + DEFAULT_JENKINS_YAML_PATH + ".d/";
     public static final String cascUserConfigFile = "user.yaml";
 
-    // cooperate with json path
     @Initializer(after= InitMilestone.STARTED, fatal=false)
     public static void patchConfig() {
         LOGGER.fine("start to calculate the patch of casc");
